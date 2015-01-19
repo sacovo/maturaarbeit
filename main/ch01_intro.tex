@@ -1,0 +1,34 @@
+\chapter{Vorwort}
+\section{Test}
+Using Sage\TeX, one can use Sage to compute things and put them into
+your \LaTeX{} document. For example, there prime factors of $1269$ ar $\sage{factor(1269)}$.
+You don't need to compute the number yourself, or even cut and paste
+it from somewhere.
+
+Here's some Sage code:
+
+\begin{sageblock}
+    f(x) = exp(x) * sin(2*x)
+\end{sageblock}
+
+The second derivative of $f$ is
+
+\[
+  \frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}} \sage{f(x)} =
+  \sage{diff(f, x, 2)(x)}.
+\]
+
+Figure~\ref{fig:sage} is a plot of $f$ from $-1$ to $1$:
+\begin{figure}[h]
+\caption{A plot of $f$ from $-1$ to $1$.}
+\centering
+\label{fig:sage}
+\sageplot[width=.75\textwidth]{plot(f, -1, 1)}
+\end{figure}
+
+\begin{figure}
+\caption{A plot of $sin(x)$}
+\centering
+\label{fig:sin}
+\sageplot[width=.75\textwidth]{plot(sin(x), x, 0, 2*pi)}
+\end{figure}
