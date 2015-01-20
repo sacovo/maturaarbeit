@@ -1,6 +1,10 @@
 \documentclass[a4paper,numbers=noendperiod]{scrreprt}
 
 \usepackage{maturastyle}
+%\addbibresource[location=remote]{http://www.citeulike.org/bibtex/gro}
+\addbibresource{biblio.bib}
+
+\defbibheading{bibliography}[\bibname]{\chapter{#1}}
 
 \begin{document}
 \input{head/title.tex}
@@ -21,6 +25,7 @@
 
 \appendix
 \input{tail/appendix.tex}
+\input{tail/glossary.tex}
 \input{tail/biblio.tex}
 
 \end{document}

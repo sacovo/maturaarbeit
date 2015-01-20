@@ -36,6 +36,14 @@
 % Include sourcecode
 \usepackage{listings}
 
+% Bibliography management
+\usepackage[hyperref=true,
+            url=true,
+            isbn=false,
+            backref=false,
+            style=numeric,
+            bibstyle=ieee]{biblatex}
+
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
@@ -77,3 +85,7 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
 
 \usepackage[section]{placeins}
+
+\usepackage[xindy,toc]{glossaries}
+\include{glossary}
+\makeglossaries
