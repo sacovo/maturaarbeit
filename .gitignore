@@ -26,4 +26,7 @@
 *.lol
 *.pdf
 *.sagetex.*
+*.bcf
+*.run.xml
+*.xdy
 sage-plots-for-report.tex/*
