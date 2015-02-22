@@ -1,8 +1,9 @@
 \documentclass[a4paper,numbers=noendperiod]{scrreprt}
 
 \usepackage{maturastyle}
-%\addbibresource[location=remote]{http://www.citeulike.org/bibtex/gro}
-\addbibresource{biblio.bib}
+\addbibresource[location=remote]{http://www.citeulike.org/bibtex/user/sacovo/tag/maturaarbeit}
+%\addbibresource{sacovo-maturaarbeit.bib}
+\nocite{*}
 
 \defbibheading{bibliography}[\bibname]{\chapter{#1}}
 
@@ -10,13 +11,8 @@
 \input{head/title.tex}
 \input{head/abstract.tex}
 
+\renewcommand{\contentsname}{Inhalt}
 \tableofcontents
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
-\listoffigures
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
-\listoftables
-\addcontentsline{toc}{chapter}{Listingverzeichnis}
-\lstlistoflistings%
 
 \input{main/ch01_intro.tex}
 \input{main/ch02_material_methods.tex}
@@ -24,7 +20,14 @@
 \input{main/ch04_discussion.tex}
 
 \appendix
+
 \input{tail/appendix.tex}
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\lstlistoflistings%
+\addcontentsline{toc}{chapter}{Listingverzeichnis}
 \input{tail/glossary.tex}
 \input{tail/biblio.tex}
 
